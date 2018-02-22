@@ -88,6 +88,7 @@ catkin_package(
 )
 
 if(CATKIN_ENABLE_TESTING)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
   add_subdirectory(test)
   add_subdirectory(perf)
   add_subdirectory(test_serialization)

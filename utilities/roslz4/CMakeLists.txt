@@ -67,6 +67,7 @@ install(DIRECTORY include/${PROJECT_NAME}
 
 # Testing
 if (CATKIN_ENABLE_TESTING)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
   catkin_add_gtest(test_roslz4 test/roslz4_test.cpp)
   if (TARGET test_roslz4)
     target_link_libraries(test_roslz4 roslz4 ${catkin_LIBRARIES})
