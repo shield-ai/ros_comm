@@ -71,7 +71,7 @@ class TestRoswtfOffline(unittest.TestCase):
             'rosbag', 'rosbag_storage', 'roslz4', 'rosconsole', 'roscpp', 'rosgraph_msgs', 'roslang', 'rosmaster', 'rosmsg', 'rosout', 'rosparam', 'rospy', 'rostest', 'rostopic', 'topic_tools', 'xmlrpcpp',
             'cpp_common', 'roscpp_serialization', 'roscpp_traits', 'rostime',  # roscpp_core
             'rosbuild', 'rosclean', 'rosunit',  # ros
-            'rospack', 'std_msgs', 'std_srvs', 'pluginlib', 'class_loader', 'message_runtime', 'message_generation', 'gencpp', 'genlisp', 'genpy', 'genmsg', 'catkin',
+            'rospack', 'std_msgs', 'std_srvs', 'pluginlib', 'class_loader', 'message_runtime', 'message_generation', 'gencpp', 'genlisp', 'genpy', 'genmsg', 'catkin', 'ros_environment'
         ]
         paths = [rospack.get_path(pkg) for pkg in pkgs]
         try:
